@@ -1,0 +1,6 @@
+RewriteCond %{THE_REQUEST} ^.*/index\.html
+RewriteRule ^(.*)index.html$ http://ドメイン名/$1 [R=301,L]
+
+RewriteEngine on
+RewriteCond %{HTTPS} on
+RewriteRule ^ (.*)$ http://www.example.com/$1 [R=301,L]

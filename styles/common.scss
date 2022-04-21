@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 35px;
+  &__title {
+    font-size: 32px;
+    font-family: "Century Gothic";
+    text-decoration: none;
+    color: black;
+    letter-spacing: 5px;
+    display: inline-block;
+    transition: 0.8s;
+    &:hover {
+      opacity: 0.3;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+  &__button {
+    font-size: 32px;
+    &--close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 15px 40px;
+    }
+  }
+  &__nav {
+    width: 30%;
+    height: 100%;
+    padding: 80px 35px;
+    top: 0px;
+    right: 0;
+    background-color: #768ca3;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    font-size: 20px;
+    &Item {
+      margin: 15px auto;
+      &:hover {
+        opacity: 0.3;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+.footer {
+  text-align: center;
+  color: #727171;
+  margin: 140px 0 20px;
+}
