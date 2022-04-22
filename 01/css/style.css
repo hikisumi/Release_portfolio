@@ -1,37 +1,4 @@
-.button {
-  color: #768ca3;
-  background-color: transparent;
-  width: 25%;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 800;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  border: solid 1px #768ca3;
-  border-radius: 4px;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.button:hover {
-  color: white;
-  background-color: #768ca3;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.button a,
-.button p {
-  display: block;
-  margin: 15px 20px;
-  color: #768ca3;
-}
-
-.button a:hover,
-.button p:hover {
-  color: white;
-}
-
+@charset "UTF-8";
 .introduction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +204,7 @@
   display: block;
 }
 
+/* ヘッダー */
 .header {
   width: 100%;
   background-color: white;
@@ -304,9 +272,45 @@
   transition: 0.3s;
 }
 
+/* フッター */
 .footer {
   text-align: center;
   color: #727171;
   margin: 140px 0 20px;
+}
+
+/* ボタン */
+.button {
+  color: #768ca3;
+  background-color: transparent;
+  width: 25%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  border: solid 1px #768ca3;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: white;
+  background-color: #768ca3;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.button a,
+.button p {
+  display: block;
+  margin: 15px 20px;
+  color: #768ca3;
+}
+
+.button a:hover,
+.button p:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
