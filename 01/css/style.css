@@ -292,7 +292,6 @@
   transition: 0.8s;
   border: solid 1px #768ca3;
   border-radius: 4px;
-  display: inline-block;
   cursor: pointer;
 }
 
