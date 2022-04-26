@@ -11,7 +11,7 @@
     position: relative;
   }
   &__modal {
-    color: #768ca3;
+    color: $main-color;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -23,11 +23,11 @@
     background: rgba(242, 243, 245, 0.9);
     display: none;
     &Title {
-      font-size: 26px;
+      font-size: $content-title;
       border-bottom: solid 1.25px;
     }
     &Sub {
-      font-size: 14px;
+      font-size: $content-sub-title;
       padding-top: 10px;
     }
     &Text {
@@ -40,20 +40,20 @@
 .chapter {
   margin: 160px 100px;
   text-align: center;
-  color: #768ca3;
+  color: $main-color;
   &__title {
-    font-size: 26px;
+    font-size: $content-title;
     border-bottom: solid 1.25px;
   }
   &__sub {
-    font-size: 14px;
+    font-size: $content-sub-title;
     padding-top: 10px;
     margin-bottom: 100px;
   }
   &__article {
     margin: 100px 0;
-    font-size: 18px;
-    color: black;
+    font-size: $main-text;
+    color: $text-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,8 +82,8 @@
   &__item {
     width: calc(100% / 2 - 20px);
     list-style: none;
-    color: #768ca3;
-    background-color: #768ca3;
+    color: $main-color;
+    background-color: $main-color;
     border-radius: 10px;
     margin: 60px 0;
     padding: 15px;
@@ -99,7 +99,7 @@
       justify-content: space-between;
       align-items: center;
       background-color: white;
-      color: black;
+      color: $text-color;
       height: 140px;
     }
     &Icon {
@@ -111,6 +111,7 @@
     }
     &Text {
       padding: 0 20px 0 10px;
+      font-size: $main-text;
     }
   }
 }
@@ -125,7 +126,7 @@
     &Link {
       position: absolute;
       top: 0;
-      font-size: 18px;
+      font-size: $main-text;
       padding-top: 250px;
       width: 100%;
       display: block;
@@ -148,4 +149,3 @@
   margin: 0px auto;
   display: block;
 }
-

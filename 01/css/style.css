@@ -35,12 +35,12 @@
 }
 
 .introduction__modalTitle {
-  font-size: 26px;
+  font-size: 30px;
   border-bottom: solid 1.25px;
 }
 
 .introduction__modalSub {
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 10px;
 }
 
@@ -57,12 +57,12 @@
 }
 
 .chapter__title {
-  font-size: 26px;
+  font-size: 30px;
   border-bottom: solid 1.25px;
 }
 
 .chapter__sub {
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 10px;
   margin-bottom: 100px;
 }
@@ -70,7 +70,7 @@
 .chapter__article {
   margin: 100px 0;
   font-size: 18px;
-  color: black;
+  color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,7 +142,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  color: black;
+  color: #333333;
   height: 140px;
 }
 
@@ -156,6 +156,7 @@
 
 .skill__itemText {
   padding: 0 20px 0 10px;
+  font-size: 18px;
 }
 
 .work {
@@ -224,7 +225,7 @@
   font-size: 32px;
   font-family: "Century Gothic";
   text-decoration: none;
-  color: black;
+  color: #333333;
   letter-spacing: 5px;
   display: inline-block;
   -webkit-transition: 0.8s;
