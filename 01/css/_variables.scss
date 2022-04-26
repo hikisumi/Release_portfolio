@@ -5,7 +5,48 @@ $text-color: #333333;
 $header-font: "Century Gothic";
 // フォントサイズ
 $title: 32px;
+$nav-text: 22px;
 $btn-text: 20px;
 $content-title: 30px;
 $content-sub-title: 16px;
 $main-text: 18px;
+$copyright: 12px;
+
+// フォントサイズ（レスポンシブ）
+$title-sp: 4.8vw;
+$nav-text-sp: 4.2vw;
+$btn-text-tab: 18px;
+$btn-text-sp: 3.6vw;
+$content-title-sp: 6vw;
+$content-sub-title-sp: 3vw;
+$main-text-sp: 3.7vw;
+$copyright-sp: 2.2vw;
+
+// 幅・高さ
+$layout-width-inner: 1080px;
+$layout-height-pc: 70px;
+$layout-height-sp: 45px;
+
+// ブレイクポイント
+$pc: 1080px;
+$tab: 768px;
+$sp: 480px;
+
+// メディアクエリ
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and(max-width:($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and(max-width:($sp)) {
+    @content;
+  }
+}

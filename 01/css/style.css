@@ -1,4 +1,20 @@
 @charset "UTF-8";
+body {
+  font-size: 1.8rem;
+}
+
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    padding: 0 10px;
+  }
+}
+
 .introduction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,16 +24,37 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 145px 0px 160px;
+  margin: 145px 0 160px;
 }
 
-.introduction__image {
-  width: 600px;
-  display: block;
+@media screen and (max-width: 768px) {
+  .introduction {
+    display: block;
+    margin: 100px 0 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .introduction {
+    margin: 100px 0 20px;
+  }
 }
 
 .introduction__container {
   position: relative;
+  width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+  .introduction__container {
+    margin: 35px auto;
+    width: 95%;
+  }
+}
+
+.introduction__image {
+  max-width: 100%;
+  display: block;
 }
 
 .introduction__modal {
@@ -25,9 +62,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 500px;
-  height: 300px;
-  margin: 50px;
+  width: 100%;
+  height: 100%;
   padding: 25px;
   text-align: center;
   background: rgba(242, 243, 245, 0.9);
@@ -39,9 +75,21 @@
   border-bottom: solid 1.25px;
 }
 
+@media screen and (max-width: 480px) {
+  .introduction__modalTitle {
+    font-size: 6vw;
+  }
+}
+
 .introduction__modalSub {
   font-size: 16px;
   padding-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .introduction__modalSub {
+    font-size: 3vw;
+  }
 }
 
 .introduction__modalText {
@@ -50,10 +98,28 @@
   line-height: 1.5;
 }
 
+@media screen and (max-width: 480px) {
+  .introduction__modalText {
+    font-size: 3.6vw;
+  }
+}
+
 .chapter {
-  margin: 160px 100px;
+  margin: 160px 40px;
   text-align: center;
   color: #768ca3;
+}
+
+@media screen and (max-width: 768px) {
+  .chapter {
+    margin: 160px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chapter {
+    margin: 40px 20px;
+  }
 }
 
 .chapter__title {
@@ -61,10 +127,21 @@
   border-bottom: solid 1.25px;
 }
 
+@media screen and (max-width: 480px) {
+  .chapter__title {
+    font-size: 6vw;
+  }
+}
+
 .chapter__sub {
   font-size: 16px;
   padding-top: 10px;
-  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  .chapter__sub {
+    font-size: 3vw;
+  }
 }
 
 .chapter__article {
@@ -82,9 +159,29 @@
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .chapter__article {
+    display: block;
+    margin: 60px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chapter__article {
+    font-size: 3.7vw;
+  }
+}
+
 .chapter__articleContainer {
-  width: 35%;
+  width: 26%;
   letter-spacing: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .chapter__articleContainer {
+    margin: auto;
+    width: 100%;
+  }
 }
 
 .chapter__articleTitle {
@@ -92,14 +189,33 @@
   font-size: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .chapter__articleTitle {
+    font-size: 6vw;
+  }
+}
+
 .chapter__articleSub {
   font-size: 16px;
   padding: 8px 0;
 }
 
+@media screen and (max-width: 480px) {
+  .chapter__articleSub {
+    font-size: 3vw;
+  }
+}
+
 .chapter__articleText {
-  width: 65%;
+  width: 60%;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .chapter__articleText {
+    margin: 20px auto;
+    width: 90%;
+  }
 }
 
 .skill {
@@ -113,22 +229,43 @@
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 768px) {
+  .skill {
+    display: block;
+  }
+}
+
 .skill__item {
   width: calc(100% / 2 - 20px);
+  height: 270px;
   list-style: none;
   color: #768ca3;
   background-color: #768ca3;
   border-radius: 10px;
-  margin: 60px 0;
+  margin: 60px auto;
   padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .skill__item {
+    width: 100%;
+    height: 200px;
+    margin: 30px auto;
+  }
 }
 
 .skill__itemTitle {
   margin: 0px 0px 15px;
-  color: white;
+  color: #fff;
   text-align: center;
-  font-size: 24px;
-  letter-spacing: 2px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 480px) {
+  .skill__itemTitle {
+    font-size: 3.6vw;
+  }
 }
 
 .skill__itemContainer {
@@ -141,9 +278,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: #fff;
   color: #333333;
-  height: 140px;
+  height: 85%;
+}
+
+@media screen and (max-width: 768px) {
+  .skill__itemContainer {
+    height: 76%;
+  }
 }
 
 .skill__itemIcon {
@@ -154,9 +297,21 @@
   padding: 0 10px 0 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .skill__itemIcon {
+    font-size: 4.8vw;
+  }
+}
+
 .skill__itemText {
   padding: 0 20px 0 10px;
   font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .skill__itemText {
+    font-size: 3.7vw;
+  }
 }
 
 .work {
@@ -169,17 +324,37 @@
   margin: 140px 0 200px;
 }
 
+@media screen and (max-width: 768px) {
+  .work {
+    display: block;
+    margin: 80px 0 200px;
+  }
+}
+
 .work__item {
-  width: 400px;
-  margin: 0px 30px;
+  width: calc(100% / 2);
+  margin: 0 30px;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .work__item {
+    margin: 80px auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .work__item {
+    width: 100%;
+  }
 }
 
 .work__itemLink {
   position: absolute;
   top: 0;
   font-size: 18px;
-  padding-top: 250px;
+  padding-top: 65%;
   width: 100%;
   display: block;
   text-align: center;
@@ -187,9 +362,15 @@
   transition: 0.8s;
 }
 
+@media screen and (max-width: 480px) {
+  .work__itemLink {
+    font-size: 3.7vw;
+  }
+}
+
 .work__itemLink:hover {
   background-color: rgba(118, 140, 163, 0.9);
-  color: white;
+  color: #fff;
   top: 0;
   padding: 125px 0;
   -webkit-transition: 0.8s;
@@ -207,18 +388,42 @@
 
 /* ヘッダー */
 .header {
-  width: 100%;
-  background-color: white;
+  height: 70px;
+  background-color: #fff;
   position: fixed;
   top: 0px;
-  z-index: 9;
+  z-index: 100;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 45px;
+  }
+}
+
+.header__inner {
+  width: 100%;
+  height: 70px;
+  max-width: 1080px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__inner {
+    height: 45px;
+    padding: 10px;
+  }
 }
 
 .header__title {
@@ -232,6 +437,12 @@
   transition: 0.8s;
 }
 
+@media screen and (max-width: 480px) {
+  .header__title {
+    font-size: 4.8vw;
+  }
+}
+
 .header__title:hover {
   opacity: 0.3;
   cursor: pointer;
@@ -243,11 +454,23 @@
   font-size: 32px;
 }
 
+@media screen and (max-width: 480px) {
+  .header__button {
+    font-size: 4.8vw;
+  }
+}
+
 .header__button--close {
   position: absolute;
   top: 0;
   right: 0;
   padding: 15px 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__button--close {
+    padding: 5px 14px;
+  }
 }
 
 .header__nav {
@@ -261,10 +484,30 @@
   position: fixed;
   z-index: 10;
   font-size: 20px;
+  color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__nav {
+    padding: 60px 15px;
+  }
 }
 
 .header__navItem {
   margin: 15px auto;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 480px) {
+  .header__navItem {
+    font-size: 4.2vw;
+  }
 }
 
 .header__navItem:hover {
@@ -280,6 +523,16 @@
   margin: 140px 0 20px;
 }
 
+.footer small {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer small {
+    font-size: 2.2vw;
+  }
+}
+
 /* ボタン */
 .button {
   color: #768ca3;
@@ -293,10 +546,19 @@
   border: solid 1px #768ca3;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 60%;
+    font-size: 20px;
+  }
 }
 
 .button:hover {
-  color: white;
+  color: #fff;
   background-color: #768ca3;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -305,12 +567,27 @@
 .button a,
 .button p {
   display: block;
-  margin: 15px 20px;
+  margin: 15px auto;
   color: #768ca3;
 }
 
 .button a:hover,
 .button p:hover {
-  color: white;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .button a,
+  .button p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button a,
+  .button p {
+    margin: 8px auto;
+    font-size: 3.6vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

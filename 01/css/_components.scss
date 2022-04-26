@@ -1,13 +1,28 @@
 /* ヘッダー */
 .header {
-  width: 100%;
-  background-color: white;
+  height: $layout-height-pc;
+  background-color: #fff;
   position: fixed;
   top: 0px;
-  z-index: 9;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 35px;
+  z-index: 100;
+  width: 100%;
+  @include tab {
+    height: $layout-height-sp;
+  }
+  &__inner {
+    width: 100%;
+    height: $layout-height-pc;
+    max-width: $layout-width-inner;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    @include tab {
+      height: $layout-height-sp;
+      padding: 10px;
+    }
+  }
   &__title {
     font-size: $title;
     font-family: $header-font;
@@ -16,6 +31,9 @@
     letter-spacing: 5px;
     display: inline-block;
     transition: 0.8s;
+    @include sp {
+      font-size: $title-sp;
+    }
     &:hover {
       opacity: 0.3;
       cursor: pointer;
@@ -24,11 +42,17 @@
   }
   &__button {
     font-size: $title;
+    @include sp {
+      font-size: $title-sp;
+    }
     &--close {
       position: absolute;
       top: 0;
       right: 0;
       padding: 15px 40px;
+      @include tab {
+        padding: 5px 14px;
+      }
     }
   }
   &__nav {
@@ -42,8 +66,19 @@
     position: fixed;
     z-index: 10;
     font-size: 20px;
+    color: $text-color;
+    @include tab {
+      width: 40%;
+    }
+    @include sp {
+      padding: 60px 15px;
+    }
     &Item {
       margin: 15px auto;
+      font-size: $nav-text;
+      @include sp {
+        font-size: $nav-text-sp;
+      }
       &:hover {
         opacity: 0.3;
         transition: 0.3s;
@@ -56,6 +91,12 @@
   text-align: center;
   color: #727171;
   margin: 140px 0 20px;
+  small {
+    font-size: $copyright;
+    @include sp {
+      font-size: $copyright-sp;
+    }
+  }
 }
 /* ボタン */
 .button {
@@ -69,18 +110,31 @@
   border: solid 1px $main-color;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  @include tab {
+    width: 60%;
+    font-size: $btn-text;
+  }
   &:hover {
-    color: white;
+    color: #fff;
     background-color: $main-color;
     transition: 0.8s;
   }
   & a,
   p {
     display: block;
-    margin: 15px 20px;
+    margin: 15px auto;
     color: $main-color;
     &:hover {
-      color: white;
+      color: #fff;
+    }
+    @include tab {
+      font-size: $btn-text-tab;
+    }
+    @include sp {
+      margin: 8px auto;
+      font-size: $btn-text-sp;
     }
   }
 }

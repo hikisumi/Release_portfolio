@@ -1,23 +1,45 @@
+body {
+  font-size: 1.8rem;
+}
+.inner {
+  max-width: $layout-width-inner;
+  margin: 0 auto;
+  padding: 0 30px;
+  @include tab {
+    padding: 0 10px;
+  }
+}
 .introduction {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 145px 0px 160px;
-  &__image {
-    width: 600px;
+  margin: 145px 0 160px;
+  @include tab {
     display: block;
+    margin: 100px 0 160px;
+  }
+  @include sp {
+    margin: 100px 0 20px;
   }
   &__container {
     position: relative;
+    width: 65%;
+    @include tab {
+      margin: 35px auto;
+      width: 95%;
+    }
+  }
+  &__image {
+    max-width: 100%;
+    display: block;
   }
   &__modal {
     color: $main-color;
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 500px;
-    height: 300px;
-    margin: 50px;
+    width: 100%;
+    height: 100%;
     padding: 25px;
     text-align: center;
     background: rgba(242, 243, 245, 0.9);
@@ -25,30 +47,50 @@
     &Title {
       font-size: $content-title;
       border-bottom: solid 1.25px;
+      @include sp {
+        font-size: $content-title-sp;
+      }
     }
     &Sub {
       font-size: $content-sub-title;
       padding-top: 10px;
+      @include sp {
+        font-size: $content-sub-title-sp;
+      }
     }
     &Text {
       font-size: 20px;
       padding: 40px 0;
       line-height: 1.5;
+      @include sp {
+        font-size: 3.6vw;
+      }
     }
   }
 }
 .chapter {
-  margin: 160px 100px;
+  margin: 160px 40px;
   text-align: center;
   color: $main-color;
+  @include tab {
+    margin: 160px 20px;
+  }
+  @include sp {
+    margin: 40px 20px;
+  }
   &__title {
     font-size: $content-title;
     border-bottom: solid 1.25px;
+    @include sp {
+      font-size: $content-title-sp;
+    }
   }
   &__sub {
     font-size: $content-sub-title;
     padding-top: 10px;
-    margin-bottom: 100px;
+    @include sp {
+      font-size: $content-sub-title-sp;
+    }
   }
   &__article {
     margin: 100px 0;
@@ -57,21 +99,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tab {
+      display: block;
+      margin: 60px 0;
+    }
+    @include sp {
+      font-size: $main-text-sp;
+    }
     &Container {
-      width: 35%;
+      width: 26%;
       letter-spacing: 5px;
+      @include tab {
+        margin: auto;
+        width: 100%;
+      }
     }
     &Title {
       font-weight: bold;
-      font-size: 30px;
+      font-size: $content-title;
+      @include sp {
+        font-size: $content-title-sp;
+      }
     }
     &Sub {
-      font-size: 16px;
+      font-size: $content-sub-title;
       padding: 8px 0;
+      @include sp {
+        font-size: $content-sub-title-sp;
+      }
     }
     &Text {
-      width: 65%;
+      width: 60%;
       line-height: 1.5;
+      @include tab {
+        margin: 20px auto;
+        width: 90%;
+      }
     }
   }
 }
@@ -79,28 +142,43 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @include tab {
+    display: block;
+  }
   &__item {
     width: calc(100% / 2 - 20px);
+    height: 270px;
     list-style: none;
     color: $main-color;
     background-color: $main-color;
     border-radius: 10px;
-    margin: 60px 0;
+    margin: 60px auto;
     padding: 15px;
+    @include tab {
+      width: 100%;
+      height: 200px;
+      margin: 30px auto;
+    }
     &Title {
       margin: 0px 0px 15px;
-      color: white;
+      color: #fff;
       text-align: center;
-      font-size: 24px;
-      letter-spacing: 2px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      @include sp {
+        font-size: 3.6vw;
+      }
     }
     &Container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: white;
+      background-color: #fff;
       color: $text-color;
-      height: 140px;
+      height: 85%;
+      @include tab {
+        height: 76%;
+      }
     }
     &Icon {
       font-size: 32px;
@@ -108,10 +186,16 @@
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       padding: 0 10px 0 20px;
+      @include sp {
+        font-size: 4.8vw;
+      }
     }
     &Text {
       padding: 0 20px 0 10px;
       font-size: $main-text;
+      @include sp {
+        font-size: $main-text-sp;
+      }
     }
   }
 }
@@ -119,22 +203,36 @@
   display: flex;
   justify-content: center;
   margin: 140px 0 200px;
+  @include tab {
+    display: block;
+    margin: 80px 0 200px;
+  }
   &__item {
-    width: 400px;
-    margin: 0px 30px;
+    width: calc(100% / 2);
+    margin: 0 30px;
     position: relative;
+    @include tab {
+      margin: 80px auto;
+      width: 80%;
+    }
+    @include sp {
+      width: 100%;
+    }
     &Link {
       position: absolute;
       top: 0;
       font-size: $main-text;
-      padding-top: 250px;
+      padding-top: 65%;
       width: 100%;
       display: block;
       text-align: center;
       transition: 0.8s;
+      @include sp {
+        font-size: $main-text-sp;
+      }
       &:hover {
         background-color: rgba(118, 140, 163, 0.9);
-        color: white;
+        color: #fff;
         top: 0;
         padding: 125px 0;
         transition: 0.8s;
