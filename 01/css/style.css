@@ -3,19 +3,19 @@ body {
   font-size: 1.8rem;
 }
 
-.inner {
+.indexPage {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .inner {
+  .indexPage {
     padding: 0 10px;
   }
 }
 
-.introduction {
+.indexPage__introduction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,36 +28,36 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .introduction {
+  .indexPage__introduction {
     display: block;
     margin: 100px 0 160px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .introduction {
+  .indexPage__introduction {
     margin: 100px 0 20px;
   }
 }
 
-.introduction__container {
+.indexPage__content {
   position: relative;
   width: 65%;
 }
 
 @media screen and (max-width: 768px) {
-  .introduction__container {
+  .indexPage__content {
     margin: 35px auto;
     width: 95%;
   }
 }
 
-.introduction__image {
+.indexPage__contentImg {
   max-width: 100%;
   display: block;
 }
 
-.introduction__modal {
+.indexPage__modal {
   color: #768ca3;
   position: absolute;
   top: 0px;
@@ -70,81 +70,81 @@ body {
   display: none;
 }
 
-.introduction__modalTitle {
+.indexPage__modalTitle {
   font-size: 30px;
   border-bottom: solid 1.25px;
 }
 
 @media screen and (max-width: 480px) {
-  .introduction__modalTitle {
+  .indexPage__modalTitle {
     font-size: 6vw;
   }
 }
 
-.introduction__modalSub {
+.indexPage__modalSub {
   font-size: 16px;
   padding-top: 10px;
 }
 
 @media screen and (max-width: 480px) {
-  .introduction__modalSub {
+  .indexPage__modalSub {
     font-size: 3vw;
   }
 }
 
-.introduction__modalText {
+.indexPage__modalText {
   font-size: 20px;
   padding: 40px 0;
   line-height: 1.5;
 }
 
 @media screen and (max-width: 480px) {
-  .introduction__modalText {
+  .indexPage__modalText {
     font-size: 3.6vw;
   }
 }
 
-.chapter {
+.indexPage__chapter {
   margin: 160px 40px;
   text-align: center;
   color: #768ca3;
 }
 
 @media screen and (max-width: 768px) {
-  .chapter {
+  .indexPage__chapter {
     margin: 160px 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .chapter {
+  .indexPage__chapter {
     margin: 40px 20px;
   }
 }
 
-.chapter__title {
+.indexPage__chapterTitle {
   font-size: 30px;
   border-bottom: solid 1.25px;
 }
 
 @media screen and (max-width: 480px) {
-  .chapter__title {
+  .indexPage__chapterTitle {
     font-size: 6vw;
   }
 }
 
-.chapter__sub {
+.indexPage__chapterSub {
   font-size: 16px;
   padding-top: 10px;
 }
 
 @media screen and (max-width: 480px) {
-  .chapter__sub {
+  .indexPage__chapterSub {
     font-size: 3vw;
   }
 }
 
-.chapter__article {
+.indexPage__article {
   margin: 100px 0;
   font-size: 18px;
   color: #333333;
@@ -160,65 +160,65 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .chapter__article {
+  .indexPage__article {
     display: block;
     margin: 60px 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .chapter__article {
+  .indexPage__article {
     font-size: 3.7vw;
   }
 }
 
-.chapter__articleContainer {
+.indexPage__articleContainer {
   width: 26%;
   letter-spacing: 5px;
 }
 
 @media screen and (max-width: 768px) {
-  .chapter__articleContainer {
+  .indexPage__articleContainer {
     margin: auto;
     width: 100%;
   }
 }
 
-.chapter__articleTitle {
+.indexPage__articleTitle {
   font-weight: bold;
   font-size: 30px;
 }
 
 @media screen and (max-width: 480px) {
-  .chapter__articleTitle {
+  .indexPage__articleTitle {
     font-size: 6vw;
   }
 }
 
-.chapter__articleSub {
+.indexPage__articleSub {
   font-size: 16px;
   padding: 8px 0;
 }
 
 @media screen and (max-width: 480px) {
-  .chapter__articleSub {
+  .indexPage__articleSub {
     font-size: 3vw;
   }
 }
 
-.chapter__articleText {
+.indexPage__articleText {
   width: 60%;
   line-height: 1.5;
 }
 
 @media screen and (max-width: 768px) {
-  .chapter__articleText {
+  .indexPage__articleText {
     margin: 20px auto;
     width: 90%;
   }
 }
 
-.skill {
+.indexPage__skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,12 +230,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .skill {
+  .indexPage__skill {
     display: block;
   }
 }
 
-.skill__item {
+.indexPage__skillItem {
   width: calc(100% / 2 - 20px);
   height: 270px;
   list-style: none;
@@ -247,14 +247,39 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .skill__item {
+  .indexPage__skillItem {
     width: 100%;
     height: 200px;
     margin: 30px auto;
   }
 }
 
-.skill__itemTitle {
+.indexPage__skillIcon {
+  font-size: 32px;
+  margin: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding: 0 10px 0 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .indexPage__skillIcon {
+    font-size: 4.8vw;
+  }
+}
+
+.indexPage__skillText {
+  padding: 0 20px 0 10px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .indexPage__skillText {
+    font-size: 3.7vw;
+  }
+}
+
+.indexPage__skillTitle {
   margin: 0px 0px 15px;
   color: #fff;
   text-align: center;
@@ -263,12 +288,12 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .skill__itemTitle {
+  .indexPage__skillTitle {
     font-size: 3.6vw;
   }
 }
 
-.skill__itemContainer {
+.indexPage__skillContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,37 +309,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .skill__itemContainer {
+  .indexPage__skillContainer {
     height: 76%;
   }
 }
 
-.skill__itemIcon {
-  font-size: 32px;
-  margin: auto;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  padding: 0 10px 0 20px;
-}
-
-@media screen and (max-width: 480px) {
-  .skill__itemIcon {
-    font-size: 4.8vw;
-  }
-}
-
-.skill__itemText {
-  padding: 0 20px 0 10px;
-  font-size: 18px;
-}
-
-@media screen and (max-width: 480px) {
-  .skill__itemText {
-    font-size: 3.7vw;
-  }
-}
-
-.work {
+.indexPage__work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,32 +325,36 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .work {
+  .indexPage__work {
     display: block;
     margin: 80px 0 200px;
   }
 }
 
-.work__item {
+.indexPage__workItem {
   width: calc(100% / 2);
   margin: 0 30px;
   position: relative;
 }
 
 @media screen and (max-width: 768px) {
-  .work__item {
+  .indexPage__workItem {
     margin: 80px auto;
     width: 80%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .work__item {
+  .indexPage__workItem {
     width: 100%;
   }
 }
 
-.work__itemLink {
+.indexPage__workItem img {
+  max-width: 100%;
+}
+
+.indexPage__workLink {
   position: absolute;
   top: 0;
   font-size: 18px;
@@ -363,12 +367,12 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .work__itemLink {
+  .indexPage__workLink {
     font-size: 3.7vw;
   }
 }
 
-.work__itemLink:hover {
+.indexPage__workLink:hover {
   background-color: rgba(118, 140, 163, 0.9);
   color: #fff;
   top: 0;
@@ -377,11 +381,7 @@ body {
   transition: 0.8s;
 }
 
-.work__item img {
-  max-width: 100%;
-}
-
-.contact {
+.indexPage__contact {
   margin: 0px auto;
   display: block;
 }
