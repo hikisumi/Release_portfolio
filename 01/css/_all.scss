@@ -252,8 +252,16 @@ body {
   margin: 0 auto;
   &__top {
     background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
     height: 100vh;
-    margin: $layout-height-pc auto 100px;
+    max-width: 100%;
+    margin: $layout-height-pc auto 0;
+    @include tab {
+      height: 50vh;
+      background-position: center;
+      margin: $layout-height-sp auto 0;
+    }
     &--01 {
       background-image: url(../images/works/01/01_pc_001.png);
     }
@@ -274,29 +282,54 @@ body {
     align-items: center;
     justify-content: center;
     text-shadow: $title-shadow;
+    @include tab {
+      font-size: 38px;
+    }
+    @include sp {
+      font-size: 8vw;
+    }
   }
   &__content {
     margin: 0 30px;
+    @include sp {
+      margin: 0 15px;
+    }
   }
   &__chapter {
     color: $text-color;
+    margin: 100px auto;
+    @include sp {
+      margin: 40px auto;
+    }
     &Title {
       background-color: $main-color;
       color: #fff;
       padding: 10px 15px;
       box-shadow: $shadow;
       margin: 15px auto;
+      font-size: $content-title;
+      @include sp {
+        font-size: $content-title-sp;
+      }
     }
     &Sub {
       font-size: 24px;
-      margin: 25px auto;
+      margin: 45px auto;
       border-bottom: $border;
       line-height: 1.75;
+      @include sp {
+        font-size: 5vw;
+        margin: 25px auto;
+      }
     }
     &Text {
       font-size: $main-text;
       margin: 50px auto;
       line-height: 1.75;
+      @include sp {
+        font-size: $main-text-sp;
+        margin: 25px auto;
+      }
     }
     &Link {
       margin: 80px 0;
@@ -310,14 +343,27 @@ body {
     flex-wrap: wrap;
     &Pc,
     &Sp {
-      margin: 30px 0;
+      margin: 30px auto;
       box-shadow: $image-shadow;
+      @include sp {
+        margin: 10px 0;
+      }
     }
     &Pc {
       width: calc(100% / 2 - 30px);
+      @include tab {
+        width: 100%;
+      }
     }
     &Sp {
       width: calc(100% / 3 - 30px);
+      @include tab {
+        width: calc(100% / 2 - 30px);
+      }
+      @include sp {
+        display: block;
+        width: 100%;
+      }
     }
   }
 }

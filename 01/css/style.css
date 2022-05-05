@@ -393,8 +393,19 @@ body {
 
 .worksPage__top {
   background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
   height: 100vh;
-  margin: 70px auto 100px;
+  max-width: 100%;
+  margin: 70px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .worksPage__top {
+    height: 50vh;
+    background-position: center;
+    margin: 45px auto 0;
+  }
 }
 
 .worksPage__top--01 {
@@ -427,12 +438,37 @@ body {
   text-shadow: 4px 4px #666769;
 }
 
+@media screen and (max-width: 768px) {
+  .worksPage__title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .worksPage__title {
+    font-size: 8vw;
+  }
+}
+
 .worksPage__content {
   margin: 0 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .worksPage__content {
+    margin: 0 15px;
+  }
+}
+
 .worksPage__chapter {
   color: #333333;
+  margin: 100px auto;
+}
+
+@media screen and (max-width: 480px) {
+  .worksPage__chapter {
+    margin: 40px auto;
+  }
 }
 
 .worksPage__chapterTitle {
@@ -442,19 +478,40 @@ body {
   -webkit-box-shadow: 4px 4px 3px #666769;
           box-shadow: 4px 4px 3px #666769;
   margin: 15px auto;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .worksPage__chapterTitle {
+    font-size: 6vw;
+  }
 }
 
 .worksPage__chapterSub {
   font-size: 24px;
-  margin: 25px auto;
+  margin: 45px auto;
   border-bottom: solid 1px;
   line-height: 1.75;
+}
+
+@media screen and (max-width: 480px) {
+  .worksPage__chapterSub {
+    font-size: 5vw;
+    margin: 25px auto;
+  }
 }
 
 .worksPage__chapterText {
   font-size: 18px;
   margin: 50px auto;
   line-height: 1.75;
+}
+
+@media screen and (max-width: 480px) {
+  .worksPage__chapterText {
+    font-size: 3.7vw;
+    margin: 25px auto;
+  }
 }
 
 .worksPage__chapterLink {
@@ -479,17 +536,42 @@ body {
 }
 
 .worksPage__imagePc, .worksPage__imageSp {
-  margin: 30px 0;
+  margin: 30px auto;
   -webkit-box-shadow: 1px 1px 3px #666769;
           box-shadow: 1px 1px 3px #666769;
+}
+
+@media screen and (max-width: 480px) {
+  .worksPage__imagePc, .worksPage__imageSp {
+    margin: 10px 0;
+  }
 }
 
 .worksPage__imagePc {
   width: calc(100% / 2 - 30px);
 }
 
+@media screen and (max-width: 768px) {
+  .worksPage__imagePc {
+    width: 100%;
+  }
+}
+
 .worksPage__imageSp {
   width: calc(100% / 3 - 30px);
+}
+
+@media screen and (max-width: 768px) {
+  .worksPage__imageSp {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .worksPage__imageSp {
+    display: block;
+    width: 100%;
+  }
 }
 
 /* ヘッダー */
