@@ -249,11 +249,17 @@ body {
 }
 .worksPage {
   max-width: $layout-width-inner;
+  margin: 0 auto;
   &__top {
-    background-image: url(../images/works/02/02_pc_001.png);
     background-size: cover;
     height: 100vh;
     margin: $layout-height-pc auto 100px;
+    &--01 {
+      background-image: url(../images/works/01/01_pc_001.png);
+    }
+    &--02 {
+      background-image: url(../images/works/02/02_pc_001.png);
+    }
   }
   &__title {
     color: #fff;
@@ -287,6 +293,7 @@ body {
     &Text {
       font-size: $main-text;
       margin: 50px auto;
+      line-height: 1.75;
     }
     &Link {
       margin: 80px 0;

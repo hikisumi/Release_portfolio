@@ -388,13 +388,21 @@ body {
 
 .worksPage {
   max-width: 1080px;
+  margin: 0 auto;
 }
 
 .worksPage__top {
-  background-image: url(../images/works/02/02_pc_001.png);
   background-size: cover;
   height: 100vh;
   margin: 70px auto 100px;
+}
+
+.worksPage__top--01 {
+  background-image: url(../images/works/01/01_pc_001.png);
+}
+
+.worksPage__top--02 {
+  background-image: url(../images/works/02/02_pc_001.png);
 }
 
 .worksPage__title {
@@ -442,6 +450,7 @@ body {
 .worksPage__chapterText {
   font-size: 18px;
   margin: 50px auto;
+  line-height: 1.75;
 }
 
 .worksPage__chapterLink {

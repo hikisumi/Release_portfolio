@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="WEB制作に携わりたいと考えている引地のポートフォリオサイトです。"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 | HIKICHI's PORTFOLIO</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- ここからヘッダー -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="header__title">HIKICHI's PORTFOLIO</a>
+        <button class="header__button">
+          <i id="menu-show" class="fas fa-bars"></i>
+        </button>
+        <!-- ここからヘッダーメニュー -->
+        <div id="menu-modal" class="header__nav menu">
+          <button class="header__button header__button--close">
+            <i id="menu-close" class="fas fa-times"></i>
+          </button>
+          <div class="header__navItem menu-list">
+            <a href="index.html">HOME</a>
+          </div>
+          <div class="header__navItem menu-list">
+            <a href="#about">ABOUT</a>
+          </div>
+          <div class="header__navItem menu-list">
+            <a href="#work">WORK</a>
+          </div>
+          <div class="header__navItem menu-list">
+            <a href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="worksPage">
+      <div class="worksPage__top worksPage__top--01">
+        <div class="worksPage__title">ポートフォリオサイト</div>
+      </div>
+      <div class="worksPage__content">
+        <div class="worksPage__chapter">
+          <h4 class="worksPage__chapterTitle">作品について</h4>
+          <h5 class="worksPage__chapterSub">概要</h5>
+          <div class="worksPage__chapterText">
+            現在ご覧いただいている本ポートフォリオサイトです。<br />
+            「シンプルでわかりやすい」をテーマに作成しました。
+          </div>
+          <h5 class="worksPage__chapterSub">担当範囲</h5>
+          <div class="worksPage__chapterText">デザイン・コーディング</div>
+          <h5 class="worksPage__chapterSub">制作時間</h5>
+          <div class="worksPage__chapterText">約2週間</div>
+        </div>
+        <div class="worksPage__chapter">
+          <h4 class="worksPage__chapterTitle">作品イメージ</h4>
+          <h5 class="worksPage__chapterSub">PC版</h5>
+          <div class="worksPage__image">
+            <img
+              class="worksPage__imagePc"
+              src="../images/works/02/02_pc_001.png"
+            />
+            <img
+              class="worksPage__imagePc"
+              src="../images/works/02/02_pc_002.png"
+            />
+            <img
+              class="worksPage__imagePc"
+              src="../images/works/02/02_pc_003.png"
+            />
+            <img
+              class="worksPage__imagePc"
+              src="../images/works/02/02_pc_004.png"
+            />
+          </div>
+          <h5 class="worksPage__chapterSub">SP版</h5>
+          <div class="worksPage__image">
+            <img
+              class="worksPage__imageSp"
+              src="../images/works/02/02_sp_001.png"
+            />
+            <img
+              class="worksPage__imageSp"
+              src="../images/works/02/02_sp_002.png"
+            />
+            <img
+              class="worksPage__imageSp"
+              src="../images/works/02/02_sp_003.png"
+            />
+          </div>
+        </div>
+        <div class="worksPage__chapter">
+          <h4 class="worksPage__chapterTitle">リンク</h4>
+          <div class="worksPage__chapterLink">
+            <button class="button">
+              <a href="https://medialinker.co.jp/" target="_blank">
+                サイトを見る
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </button>
+            <button class="button">
+              <a href="https://github.com/hikisumi/Release_portfolio/tree/master/01" target="_blank">
+                GitHubを見る
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ここからフッター -->
+    <footer class="footer">
+      <small> Copyright&copy; 2022 HIKICHI's PORTFOLIO. </small>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
