@@ -112,6 +112,7 @@
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  padding: 15px;
   @include tab {
     width: 60%;
     font-size: $btn-text;
@@ -124,7 +125,6 @@
   & a,
   p {
     display: block;
-    margin: 15px auto;
     color: $main-color;
     &:hover {
       color: #fff;
