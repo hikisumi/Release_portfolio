@@ -405,6 +405,10 @@ body {
   background-image: url(../images/works/02/02_pc_001.png);
 }
 
+.worksPage__top--03 {
+  background-image: url(../images/works/03/03_pc_001.png);
+}
+
 .worksPage__title {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.8);
