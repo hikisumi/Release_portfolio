@@ -102,7 +102,7 @@
 .button {
   color: $main-color;
   background-color: transparent;
-  width: 25%;
+  width: 30%;
   text-align: center;
   font-size: $btn-text;
   font-weight: 800;
@@ -112,10 +112,11 @@
   cursor: pointer;
   display: block;
   margin: 0 auto;
-  padding: 15px;
+  box-shadow: $shadow;
   @include tab {
     width: 60%;
     font-size: $btn-text;
+    margin: 25px auto;
   }
   &:hover {
     color: #fff;
@@ -126,6 +127,7 @@
   p {
     display: block;
     color: $main-color;
+    padding: 15px;
     &:hover {
       color: #fff;
     }

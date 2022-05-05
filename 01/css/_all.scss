@@ -210,6 +210,7 @@ body {
       width: calc(100% / 2);
       margin: 0 30px;
       position: relative;
+      box-shadow: $shadow;
       @include tab {
         margin: 80px auto;
         width: 80%;
@@ -281,7 +282,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: $title-shadow;
+    text-shadow: $text-shadow;
     @include tab {
       font-size: 38px;
     }
@@ -305,7 +306,7 @@ body {
       background-color: $main-color;
       color: #fff;
       padding: 10px 15px;
-      box-shadow: $shadow;
+      box-shadow: $title-shadow;
       margin: 15px auto;
       font-size: $content-title;
       @include sp {
@@ -335,6 +336,9 @@ body {
       margin: 80px 0;
       display: flex;
       justify-content: space-between;
+      @include tab {
+        display: block;
+      }
     }
   }
   &__image {
@@ -344,7 +348,7 @@ body {
     &Pc,
     &Sp {
       margin: 30px auto;
-      box-shadow: $image-shadow;
+      box-shadow: $shadow;
       @include sp {
         margin: 10px 0;
       }
