@@ -321,7 +321,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 140px 0 200px;
+  margin: 100px 0 200px;
 }
 
 @media screen and (max-width: 768px) {
@@ -332,11 +332,8 @@ body {
 }
 
 .indexPage__workItem {
-  width: calc(100% / 2);
+  width: calc(100% / 3);
   margin: 0 30px;
-  position: relative;
-  -webkit-box-shadow: 1px 1px 3px #666769;
-          box-shadow: 1px 1px 3px #666769;
 }
 
 @media screen and (max-width: 768px) {
@@ -352,20 +349,29 @@ body {
   }
 }
 
+.indexPage__workItem:hover {
+  cursor: pointer;
+}
+
 .indexPage__workItem img {
   max-width: 100%;
+  -webkit-box-shadow: 1px 1px 3px #666769;
+          box-shadow: 1px 1px 3px #666769;
+  margin: 15px 0;
+}
+
+.indexPage__workItem img:hover {
+  opacity: 0.3;
 }
 
 .indexPage__workLink {
-  position: absolute;
-  top: 0;
   font-size: 18px;
-  padding-top: 65%;
+  color: #333333;
   width: 100%;
   display: block;
   text-align: center;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  text-decoration: none;
+  position: relative;
 }
 
 @media screen and (max-width: 480px) {
@@ -374,13 +380,30 @@ body {
   }
 }
 
-.indexPage__workLink:hover {
-  background-color: rgba(118, 140, 163, 0.9);
-  color: #fff;
-  top: 0;
-  padding: 125px 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+.indexPage__workLink::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  left: 0;
+  bottom: -5px;
+  background-color: #768ca3;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.indexPage__workLink:hover::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .indexPage__contact {
