@@ -17,19 +17,36 @@ body {
     margin: $layout-height-pc 0 160px;
     @include tab {
       margin: $layout-height-sp 0 160px;
+      height: 50vh;
+    }
+    @include sp {
+      margin: $layout-height-sp 0 0;
     }
     &Container {
       background-color: rgba(0, 0, 0, 0.6);
       width: 100%;
       height: 100%;
       color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 4px;
     }
     &Title {
       font-size: 48px;
       font-family: $main-font;
+      @include sp {
+        font-size: 10vw;
+      }
     }
     &Sub {
       display: block;
+      font-size: 22px;
+      margin: 8px auto;
+      @include sp {
+        font-size: 4.2vw;
+      }
     }
   }
   &__introduction {
@@ -113,7 +130,7 @@ body {
     }
   }
   &__article {
-    margin: 100px 0;
+    margin: 100px auto;
     font-size: $main-text;
     color: $text-color;
     display: flex;
@@ -121,10 +138,11 @@ body {
     align-items: center;
     @include tab {
       display: block;
-      margin: 60px 0;
+      margin: 60px auto;
     }
     @include sp {
       font-size: $main-text-sp;
+      margin: 30px auto;
     }
     &Container {
       width: 26%;
@@ -226,6 +244,9 @@ body {
       display: block;
       margin: 80px 0 200px;
     }
+    @include sp {
+      margin: 30px 0 100px;
+    }
     &Item {
       width: calc(100% / 3);
       margin: 0 30px;
@@ -235,6 +256,7 @@ body {
       }
       @include sp {
         width: 100%;
+        margin: 20px auto;
       }
       &:hover {
         cursor: pointer;
