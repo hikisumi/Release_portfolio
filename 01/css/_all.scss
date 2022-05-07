@@ -8,6 +8,30 @@ body {
   @include tab {
     padding: 0 10px;
   }
+  &__top {
+    background-image: url(/images/top/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100%;
+    margin: $layout-height-pc 0 160px;
+    @include tab {
+      margin: $layout-height-sp 0 160px;
+    }
+    &Container {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      color: #fff;
+    }
+    &Title {
+      font-size: 48px;
+      font-family: $main-font;
+    }
+    &Sub {
+      display: block;
+    }
+  }
   &__introduction {
     display: flex;
     justify-content: space-around;
@@ -27,10 +51,6 @@ body {
     @include tab {
       margin: 35px auto;
       width: 95%;
-    }
-    &Img {
-      max-width: 100%;
-      display: block;
     }
   }
   &__modal {
