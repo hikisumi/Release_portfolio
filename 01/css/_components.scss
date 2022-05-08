@@ -141,3 +141,45 @@
     }
   }
 }
+/* トップ */
+.top {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+  margin: $layout-height-pc auto 0;
+  @include tab {
+    height: 50vh;
+    background-position: center;
+    margin: $layout-height-sp auto 0;
+  }
+  &Title {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: $text-shadow;
+    @include tab {
+      font-size: 38px;
+    }
+    @include sp {
+      font-size: 8vw;
+    }
+  }
+}
+/* タイトル */
+.title {
+  background-color: $main-color;
+  color: #fff;
+  padding: 10px 15px;
+  box-shadow: $title-shadow;
+  font-size: $content-title;
+  @include sp {
+    font-size: $content-title-sp;
+  }
+}

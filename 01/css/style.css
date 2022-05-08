@@ -1,8 +1,10 @@
 @charset "UTF-8";
 body {
   font-size: 1.8rem;
+  color: #333333;
 }
 
+/* indexページ */
 .indexPage {
   max-width: 1080px;
   margin: 0 auto;
@@ -279,7 +281,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  color: #333333;
   height: 85%;
 }
 
@@ -393,26 +394,81 @@ body {
   display: block;
 }
 
-.worksPage {
+/* profileページ */
+.profilePage {
   max-width: 1080px;
   margin: 0 auto;
 }
 
-.worksPage__top {
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  height: 100vh;
-  max-width: 100%;
-  margin: 70px auto 0;
+.profilePage__top {
+  background-image: url(/images/top/main.jpg);
 }
 
-@media screen and (max-width: 768px) {
-  .worksPage__top {
-    height: 50vh;
-    background-position: center;
-    margin: 45px auto 0;
+.profilePage__content {
+  margin: 0 30px;
+}
+
+.profilePage__chapter {
+  margin: 100px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.profilePage__chapter h5 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.profilePage__chapter span {
+  font-size: 16px;
+}
+
+.profilePage__chapter h5,
+.profilePage__chapter span {
+  letter-spacing: 6px;
+}
+
+.profilePage__chapter p {
+  margin: 25px auto;
+}
+
+.profilePage__chapter dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px;
+}
+
+.profilePage__chapter dt {
+  width: 40%;
+}
+
+.profilePage__chapter dd {
+  width: 60%;
+}
+
+.profilePage__chapter dt, .profilePage__chapter dd {
+  text-align: left;
+  line-height: 1.75;
+}
+
+@media screen and (max-width: 480px) {
+  .profilePage__chapter {
+    font-size: 3.7vw;
   }
+}
+
+.profilePage__chapterTitle {
+  margin: 45px auto;
+}
+
+/* worksページ */
+.worksPage {
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .worksPage__top--01 {
@@ -427,36 +483,6 @@ body {
   background-image: url(../images/works/03/03_pc_001.png);
 }
 
-.worksPage__title {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 100%;
-  width: 100%;
-  font-size: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-shadow: 4px 4px #666769;
-}
-
-@media screen and (max-width: 768px) {
-  .worksPage__title {
-    font-size: 38px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .worksPage__title {
-    font-size: 8vw;
-  }
-}
-
 .worksPage__content {
   margin: 0 30px;
 }
@@ -468,29 +494,12 @@ body {
 }
 
 .worksPage__chapter {
-  color: #333333;
   margin: 100px auto;
 }
 
 @media screen and (max-width: 480px) {
   .worksPage__chapter {
     margin: 40px auto;
-  }
-}
-
-.worksPage__chapterTitle {
-  background-color: #768ca3;
-  color: #fff;
-  padding: 10px 15px;
-  -webkit-box-shadow: 4px 4px 3px #666769;
-          box-shadow: 4px 4px 3px #666769;
-  margin: 15px auto;
-  font-size: 30px;
-}
-
-@media screen and (max-width: 480px) {
-  .worksPage__chapterTitle {
-    font-size: 6vw;
   }
 }
 
@@ -793,6 +802,70 @@ body {
     margin: 8px auto;
     font-size: 3.6vw;
     padding: 6px;
+  }
+}
+
+/* トップ */
+.top {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+  margin: 70px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    height: 50vh;
+    background-position: center;
+    margin: 45px auto 0;
+  }
+}
+
+.topTitle {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  font-size: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-shadow: 4px 4px #666769;
+}
+
+@media screen and (max-width: 768px) {
+  .topTitle {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topTitle {
+    font-size: 8vw;
+  }
+}
+
+/* タイトル */
+.title {
+  background-color: #768ca3;
+  color: #fff;
+  padding: 10px 15px;
+  -webkit-box-shadow: 4px 4px 3px #666769;
+          box-shadow: 4px 4px 3px #666769;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 6vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
