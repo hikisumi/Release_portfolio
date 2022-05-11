@@ -48,7 +48,7 @@
     &--close {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 2%;
       padding: 15px 40px;
       @include tab {
         padding: 5px 14px;
@@ -56,19 +56,23 @@
     }
   }
   &__nav {
-    width: 30%;
+    width: 100%;
     height: 100%;
-    padding: 80px 35px;
-    top: 0px;
+    padding: 120px 35px;
+    position: fixed;
+    top: 0;
     right: 0;
     background-color: $main-color;
-    display: none;
-    position: fixed;
-    z-index: 10;
     font-size: 20px;
+    text-align: center;
     color: $text-color;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    /* メニュークリック後のCSS */
+    &--active {
+      transform: translateX(0);
+    }
     @include tab {
-      width: 40%;
     }
     @include sp {
       padding: 60px 15px;
@@ -86,6 +90,7 @@
     }
   }
 }
+
 /* フッター */
 .footer {
   text-align: center;

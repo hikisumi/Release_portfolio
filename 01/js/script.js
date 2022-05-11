@@ -1,17 +1,11 @@
-/* $(function(){
-    // メニューモーダル表示・非表示
-    $('#menu-show').click(function(){
-       $('#menu-modal').fadeIn();
-    });
-    
-    $('#menu-close').click(function(){
-        $('#menu-modal').fadeOut();
-    });
-}); */
+const open = document.querySelector("#menu-open");
+const nav = document.querySelector("#menu-modal");
+const close = document.querySelector("#menu-close");
 
-const menu = document.querySelector("#menu-show");
+open.addEventListener("click", () => {
+  nav.classList.toggle("header__nav--active");
+});
 
-menu.addEventListener("click", () => {
-  console.log("click!!!!");
-  menu.classList.toggle("active");
+close.addEventListener("click", () => {
+  nav.classList.remove("header__nav--active");
 });
