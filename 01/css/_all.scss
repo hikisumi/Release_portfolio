@@ -11,7 +11,7 @@ body {
     padding: 0 10px;
   }
   &__top {
-    background-image: url(/images/top/main.jpg);
+    background-image: url(../images/top/main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -182,7 +182,7 @@ body {
   max-width: $layout-width-inner;
   margin: 0 auto;
   &__top {
-    background-image: url(/images/top/main.jpg);
+    background-image: url(../images/top/main.jpg);
   }
   &__content {
     margin: 0 30px;

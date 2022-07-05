@@ -18,7 +18,7 @@ body {
 }
 
 .indexPage__top {
-  background-image: url(/images/top/main.jpg);
+  background-image: url(../images/top/main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -308,7 +308,7 @@ body {
 }
 
 .profilePage__top {
-  background-image: url(/images/top/main.jpg);
+  background-image: url(../images/top/main.jpg);
 }
 
 .profilePage__content {
