@@ -1,6 +1,0 @@
-RewriteCond %{THE_REQUEST} ^._/index\.html
-RewriteRule ^(._)index.html$ hikichi.html.xdomain.jp/$1 [R=301,L]
-
-RewriteEngine on
-RewriteCond %{HTTPS} on
-RewriteRule ^ (.\*)$ hikichi.html.xdomain.jp/$1 [R=301,L]
