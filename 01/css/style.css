@@ -588,7 +588,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .header__title {
-    font-size: 4.8vw;
+    font-size: 6.6vw;
   }
 }
 
@@ -603,22 +603,17 @@ body {
   font-size: 32px;
 }
 
-@media screen and (max-width: 480px) {
-  .header__button {
-    font-size: 4.8vw;
-  }
-}
-
 .header__button--close {
+  font-size: 45px;
   position: absolute;
   top: 0;
-  right: 2%;
+  right: 0;
   padding: 15px 40px;
 }
 
 @media screen and (max-width: 768px) {
   .header__button--close {
-    padding: 5px 14px;
+    padding: 0 10px;
   }
 }
 
@@ -655,12 +650,12 @@ body {
 
 .header__navItem {
   margin: 15px auto;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 480px) {
   .header__navItem {
-    font-size: 4.2vw;
+    font-size: 6.2vw;
   }
 }
 

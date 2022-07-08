@@ -42,16 +42,14 @@
   }
   &__button {
     font-size: $title;
-    @include sp {
-      font-size: $title-sp;
-    }
     &--close {
+      font-size: 45px;
       position: absolute;
       top: 0;
-      right: 2%;
+      right: 0;
       padding: 15px 40px;
       @include tab {
-        padding: 5px 14px;
+        padding: 0 10px;
       }
     }
   }
