@@ -9,3 +9,7 @@ open.addEventListener("click", () => {
 close.addEventListener("click", () => {
   nav.classList.remove("header__nav--active");
 });
+
+nav.addEventListener("click", () => {
+  nav.classList.remove("header__nav--active");
+});
