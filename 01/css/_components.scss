@@ -143,6 +143,14 @@
       padding: 6px;
     }
   }
+  &--copy {
+    font-size: 18px;
+    padding: 6px 0;
+    width: 40%;
+    @include sp {
+      font-size: $main-text-sp;
+    }
+  }
 }
 /* トップ */
 .top {

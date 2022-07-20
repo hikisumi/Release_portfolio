@@ -296,6 +296,17 @@ body {
           transform: scaleX(1);
 }
 
+.indexPage__workText {
+  font-size: 16px;
+  margin: 35px auto;
+}
+
+@media screen and (max-width: 480px) {
+  .indexPage__workText {
+    font-size: 3.2vw;
+  }
+}
+
 .indexPage__contact {
   margin: 0px auto;
   display: block;
@@ -741,6 +752,18 @@ body {
     margin: 8px auto;
     font-size: 3.6vw;
     padding: 6px;
+  }
+}
+
+.button--copy {
+  font-size: 18px;
+  padding: 6px 0;
+  width: 40%;
+}
+
+@media screen and (max-width: 480px) {
+  .button--copy {
+    font-size: 3.7vw;
   }
 }
 

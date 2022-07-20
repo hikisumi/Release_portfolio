@@ -171,6 +171,13 @@ body {
       }
       @include underline;
     }
+    &Text {
+      font-size: 16px;
+      margin: 35px auto;
+      @include sp {
+        font-size: 3.2vw;
+      }
+    }
   }
   &__contact {
     margin: 0px auto;
