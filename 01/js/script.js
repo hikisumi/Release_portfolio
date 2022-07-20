@@ -1,3 +1,4 @@
+// メニュー開閉
 const open = document.querySelector("#menu-open");
 const nav = document.querySelector("#menu-modal");
 const close = document.querySelector("#menu-close");
@@ -12,4 +13,12 @@ close.addEventListener("click", () => {
 
 nav.addEventListener("click", () => {
   nav.classList.remove("header__nav--active");
+});
+
+// ボタンクリックでテキストコピー
+const button = document.querySelector("#copy");
+
+button.addEventListener("click", () => {
+  navigator.clipboard.writeText("06hkcsmk");
+  button.innerHTML = "copied!";
 });
