@@ -16,9 +16,18 @@ nav.addEventListener("click", () => {
 });
 
 // ボタンクリックでテキストコピー
-const button = document.querySelector("#copy");
 
-button.addEventListener("click", () => {
-  navigator.clipboard.writeText("06hkcsmk");
-  button.innerHTML = "copied!";
+const button = document.getElementsByClassName("button--copy");
+const buttons = Array.from(button);
+
+buttons.forEach((target) => {
+  target.addEventListener("click", () => {
+    navigator.clipboard.writeText("06hkcsmk");
+    target.innerHTML = "copied!";
+  });
+
+  target.addEventListener("click", () => {
+    navigator.clipboard.writeText("06hkcsmk");
+    target.innerHTML = "copied!";
+  });
 });
