@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="WEB制作に携わりたいと考えている引地のポートフォリオサイトです。"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>401 Unauthorized</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- ここからヘッダー -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="header__title">SUMIKA HIKICHI</a>
+        <button id="menu-open" class="header__button">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- ここからヘッダーメニュー -->
+        <div id="menu-modal" class="header__nav menu">
+          <button class="header__button header__button--close">
+            <i id="menu-close" class="fas fa-times"></i>
+          </button>
+          <div class="header__navItem menu-list">
+            <a href="profile.html">About</a>
+          </div>
+          <div class="header__navItem menu-list">
+            <a href="index.html#work">Work</a>
+          </div>
+          <div class="header__navItem menu-list">
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="error">
+      <h3 class="error__title">401 Unauthorized</h3>
+      <p class="error__text">
+        アクセスしようとしたページの認証に失敗しました。<br />
+        <br />
+        ご入力いただいたユーザー名やパスワードが間違っているなどの理由により認証できませんでした。<br />
+        ユーザー名またはパスワードを再度お確かめください。
+      </p>
+      <button class="button">
+        <a href="index.html">
+          TOPへ戻る <i class="fa-solid fa-circle-chevron-right"></i>
+        </a>
+      </button>
+    </div>
+    <!-- ここからフッター -->
+    <footer class="footer">
+      <small> Copyright&copy; 2022 SUMIKA HIKICHI. </small>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

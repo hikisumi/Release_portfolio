@@ -194,3 +194,32 @@
     font-size: $content-title-sp;
   }
 }
+
+/* エラーページ */
+.error {
+  max-width: $layout-width-inner;
+  margin: 0 auto;
+  padding: 0 30px;
+  margin: $layout-height-pc 0 0;
+  text-align: center;
+  @include tab {
+    margin: $layout-height-sp 0 0;
+    padding: 0 10px;
+  }
+  &__title {
+    font-size: 40px;
+    padding: 60px 0;
+    @include sp {
+      font-size: 8.4vw;
+    }
+  }
+  &__text {
+    font-size: $main-text;
+    margin: 60px auto 80px;
+    line-height: 1.75;
+    @include sp {
+      font-size: $main-text-sp;
+      margin: 0;
+    }
+  }
+}
