@@ -127,7 +127,7 @@ body {
   &__work {
     display: flex;
     justify-content: center;
-    margin: 100px 0 200px;
+    margin: 100px auto;
     @include tab {
       display: block;
       margin: 80px 0 0;
@@ -171,11 +171,24 @@ body {
       }
       @include underline;
     }
-    &Text {
-      font-size: 16px;
-      margin: 35px auto;
-      @include sp {
-        font-size: 3.2vw;
+    &Notice {
+      p {
+        font-size: $main-text;
+        margin: 35px auto;
+        @include sp {
+          font-size: $main-text-sp;
+        }
+      }
+      &--sp {
+        display: none;
+      }
+      @include tab {
+        &--pc {
+          display: none;
+        }
+        &--sp {
+          display: block;
+        }
       }
     }
   }

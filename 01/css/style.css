@@ -204,7 +204,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px 0 200px;
+  margin: 100px auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -296,14 +296,27 @@ body {
           transform: scaleX(1);
 }
 
-.indexPage__workText {
-  font-size: 16px;
+.indexPage__workNotice p {
+  font-size: 18px;
   margin: 35px auto;
 }
 
 @media screen and (max-width: 480px) {
-  .indexPage__workText {
-    font-size: 3.2vw;
+  .indexPage__workNotice p {
+    font-size: 3.7vw;
+  }
+}
+
+.indexPage__workNotice--sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .indexPage__workNotice--pc {
+    display: none;
+  }
+  .indexPage__workNotice--sp {
+    display: block;
   }
 }
 
