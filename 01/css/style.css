@@ -299,6 +299,7 @@ body {
 .indexPage__workNotice p {
   font-size: 18px;
   margin: 35px auto;
+  line-height: 1.4;
 }
 
 @media screen and (max-width: 480px) {
