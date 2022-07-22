@@ -198,9 +198,8 @@
 /* エラーページ */
 .error {
   max-width: $layout-width-inner;
-  margin: 0 auto;
   padding: 0 30px;
-  margin: $layout-height-pc 0 0;
+  margin: $layout-height-pc auto 0;
   text-align: center;
   @include tab {
     margin: $layout-height-sp 0 0;
