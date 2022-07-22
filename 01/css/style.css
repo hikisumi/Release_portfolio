@@ -848,9 +848,8 @@ body {
 /* エラーページ */
 .error {
   max-width: 1080px;
-  margin: 0 auto;
   padding: 0 30px;
-  margin: 70px 0 0;
+  margin: 70px auto 0;
   text-align: center;
 }
 
